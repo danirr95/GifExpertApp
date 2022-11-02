@@ -1,0 +1,148 @@
+* {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(255, 240, 240);
+  }
+  
+  body {
+    padding: 60px;
+  }
+  
+  input {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(97, 32, 158);
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(229, 255, 0);
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  }
+
+  button {
+    height: 4vw; 
+    width: 10vw; 
+    font-size: 2vw;
+    margin-top: 4vh;
+    background: #1acaff;
+    border-radius: 10px;
+    margin-left: 41vw;
+
+  }
+
+  button:hover { 
+    background-color: #66dbff;
+    color: rgb(107, 107, 107);
+
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    color: rgb(225, 250, 4);
+    text-shadow: 4px 4px 2px rgb(71, 71, 71);
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    border-top: solid 5px rgb(255, 208, 0);
+    box-shadow: 5px -6px 5px 0px rgba(212, 94, 94, 0.75);
+  
+    border-radius: 50px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    height: 0%;  
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    overflow: hidden;
+    max-width: 25%;
+    border: solid rgb(0, 193, 252) 4px;
+
+  }
+  
+  .card:hover {
+    animation: wiggle 2s linear infinite;
+  }
+
+  .card p {
+    background-color: white;
+    flex: 1;
+    font-size: 1.3em;
+    margin-top: 5px;
+    padding: 5px 20px 0px 20px;
+    text-align: center;
+
+    max-width: 90%;
+    word-wrap: break-word;
+
+  }
+  
+  .card img {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    background: transparent;
+  }
+
+  a:link {
+    color: blue;
+  }
+
+  a:visited {
+    color: #c9cc00;;
+  }
+
+  a:hover {
+    filter: opacity(50%);
+  }
+
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
